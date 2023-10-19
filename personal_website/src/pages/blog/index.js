@@ -10,8 +10,8 @@ export default function Blog({ posts }) {
         <ul className="space-y-4">
           {posts.map((post) => (
             <li key={post.slug} className="border p-4 rounded-md">
-              <Link href={`/blog/${post.slug}`}>
-                <a className="text-lg font-semibold">{post.title}</a>
+              <Link href={`/blog/${post.slug}`} className="text-lg font-semibold">
+                {post.title}
               </Link>
             </li>
           ))}
