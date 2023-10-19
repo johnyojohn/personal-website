@@ -5,31 +5,23 @@ import Link from "next/link";
 export default function Blog({ posts }) {
   return (
     <Layout title="Blog">
-      <h1>Blog Posts</h1>
-      <ul className="blog-list">
-        {posts.map((post) => (
-          <li key={post.slug}>
-            <Link href={`/blog/${post.slug}`}>{post.title}</Link>
-          </li>
-        ))}
-      </ul>
-      <style jsx>{`
-        .blog-list {
-          list-style: none;
-        }
-        .blog-list li {
-          margin: 10px 0;
-          padding: 10px;
-          border: 1px solid #ddd;
-          border-radius: 4px;
-        }
-        .blog-list li:hover {
-          background-color: #eee;
-        }
-      `}</style>
+      <div className="text-center">
+        <h1 className="text-5xl mb-5">Blog Posts</h1>
+        <ul className="space-y-4">
+          {posts.map((post) => (
+            <li key={post.slug} className="border p-4 rounded-md">
+              <Link href={`/blog/${post.slug}`}>
+                <a className="text-lg font-semibold">{post.title}</a>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </Layout>
   );
 }
+
+// ... existing getStaticProps code
 
 export async function getStaticProps() {
   const posts = await getPosts();
