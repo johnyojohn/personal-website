@@ -6,7 +6,7 @@ export default function Home() {
     <Layout title="Home">
       <div className="text-center">
         <h1 className="text-5xl mb-5">Hello, I'm John Seungjin Oh</h1>
-        <p className="text-xl text-[#e43a46]">
+        <p className="text-xl text-customRed">
           This is my personal website and blog.
         </p>
       </div>
@@ -22,12 +22,19 @@ export default function Home() {
         writing. It will also get new content with some time.
         <br />
         <br />
-        This website was pretty much created from scratch (a pedantic would say
+        This website was pretty much created from scratch (a pedant would say
         that no developer creates anything from scratch since everyone, and
         especially developers, and <i>especially</i> web developers, all stand
         on the shoulders of giants; I would not disagree) while I was learning
-        Next.js and Tailwind CSS. The website's icon was produced by DALL-E 3
-        during an unsuccesful attempt to emulate Rothko paintings.
+        Next.js and Tailwind CSS. Here is the &nbsp;
+        <a
+          href="https://github.com/johnyojohn/personal-website"
+          className="text-blue-500"
+        >
+          Github Repo
+        </a>
+        . The website's icon was produced by DALL-E 3 during an unsuccesful
+        attempt to emulate Rothko paintings.
         <br />
         <br />
         Lastly, here is a picture of my cat:
