@@ -38,7 +38,7 @@ const Layout = ({ children, title = "My Personal Website" }) => {
                     isActive("/") ? "active-link" : ""
                   }`}
                 >
-                  Home
+                  home
                 </span>
               </Link>
               <Link href="/about">
@@ -47,7 +47,7 @@ const Layout = ({ children, title = "My Personal Website" }) => {
                     isActive("/about") ? "active-link" : ""
                   }`}
                 >
-                  About Me
+                  about me
                 </span>
               </Link>
               <Link href="/blog">
@@ -56,7 +56,7 @@ const Layout = ({ children, title = "My Personal Website" }) => {
                     isActive("/blog") ? "active-link" : ""
                   }`}
                 >
-                  Blog
+                  blog
                 </span>
               </Link>
               <span className="absolute h-0.5 bg-blue-500 transition-all duration-300 ease-in-out underline"></span>
@@ -68,7 +68,7 @@ const Layout = ({ children, title = "My Personal Website" }) => {
       <style jsx>{`
         .active-link {
           border-bottom: 2px solid #0a93a8;
-          padding-bottom: 3px;
+          padding-bottom: 3.25px;
         }
         .underline {
           width: 0;

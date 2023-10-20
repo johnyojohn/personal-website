@@ -11,10 +11,10 @@ export default function About() {
   return (
     <Layout title="About Me">
       <div className="">
-        <h1 className="text-4xl mb-5">About Me</h1>
-        <p className="prose prose-neutral max-w-none mt-8">
-          The government calls me Seungjin Oh, my friends call me John Oh, and
-          thus this website calls me John Seungjin Oh.
+        <h1 className="text-4xl font-mono mb-8">about me</h1>
+        <p className="prose prose-neutral max-w-none">
+          My friends call me John Oh, the government calls me Seungjin Oh, and
+          so this website calls me John Seungjin Oh.
           <br />
           I am a first-year undergraduate student at Carnegie Mellon's School of
           Computer Science. In addition to a B.S. degree in computer science, I
@@ -26,15 +26,17 @@ export default function About() {
           in a segfault error.
           <br />
           My biggest focuses within computer science right now are large
-          language models (LLMs), learning interesting algorithms, and web
-          development. Within philosophy, my biggest interests are personal
-          identity, the "later" Nietzsche, philosophy of A.I., and social theory
-          (Debord, Baudrillard, Han).
+          language models (LLMs), algorithms, and web development. Within
+          philosophy, my biggest interests are personal identity, the "later"
+          Nietzsche, philosophy of A.I., and social theory (Debord, Baudrillard,
+          Han).
         </p>
 
         {/* Socials/Contacts */}
         <section className="my-8">
-          <h2 className="text-2xl mb-4 text-customRed">Socials & Contacts</h2>
+          <h2 className="text-2xl mb-4 text-customRed font-mono">
+            socials & contacts
+          </h2>
           <div className="flex space-x-4">
             <a
               href="https://github.com/johnyojohn"
@@ -60,11 +62,11 @@ export default function About() {
           </div>
           <div className="">
             <p>
-              Primary email: johanjohnsjo@gmail.com
+              primary email: johanjohnsjo@gmail.com
               <br />
-              School email: seungjio@andrew.cmu.edu
+              school email: seungjio@andrew.cmu.edu
               <br />
-              Address:
+              address:
             </p>
             <p className="text-gray-500">
               Residence On Fifth
@@ -75,15 +77,15 @@ export default function About() {
               <br />
             </p>
             <small>
-              Note: My shipping address is different since I live on campus.
-              Please email me if it is needed.
+              note: my shipping address is different since I live on campus;
+              please email me if it is needed.
             </small>
           </div>
         </section>
 
         {/* Projects */}
         <section className="my-8 mt-8">
-          <h2 className="text-2xl mb-4 text-customRed">Projects</h2>
+          <h2 className="text-2xl mb-4 text-customRed font-mono">projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="p-4 border rounded">
               <h3 className="text-xl mb-1 text-customBlue">
@@ -122,7 +124,7 @@ export default function About() {
 
         {/* Resume */}
         <section className="my-8 mt-8">
-          <h2 className="text-2xl mb-4 text-customRed">Resume</h2>
+          <h2 className="text-2xl mb-4 text-customRed font-mono">resume</h2>
           <a href="/resume.pdf" className="text-blue-500">
             Download my resume
           </a>
