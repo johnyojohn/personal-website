@@ -34,7 +34,7 @@ const Layout = ({ children, title = "My Personal Website" }) => {
             <div className="space-x-4 relative">
               <Link href="/">
                 <span
-                  className={`cursor-pointer text-gray-800 hover:text-gray-600 ${
+                  className={`cursor-pointer text-gray-800 hover:text-gray-500 ${
                     isActive("/") ? "active-link" : ""
                   }`}
                 >
@@ -43,7 +43,7 @@ const Layout = ({ children, title = "My Personal Website" }) => {
               </Link>
               <Link href="/about">
                 <span
-                  className={`cursor-pointer text-gray-800 hover:text-gray-600 ${
+                  className={`cursor-pointer text-gray-800 hover:text-gray-500 ${
                     isActive("/about") ? "active-link" : ""
                   }`}
                 >
@@ -52,7 +52,7 @@ const Layout = ({ children, title = "My Personal Website" }) => {
               </Link>
               <Link href="/blog">
                 <span
-                  className={`cursor-pointer text-gray-800 hover:text-gray-600 ${
+                  className={`cursor-pointer text-gray-800 hover:text-gray-500 ${
                     isActive("/blog") ? "active-link" : ""
                   }`}
                 >
