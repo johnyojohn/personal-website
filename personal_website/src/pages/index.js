@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <Layout title="Home">
       <div className="text-center">
-        <h1 className="text-5xl mb-3 mt-5 font-mono tracking-[-0.05em]">
+        <h1 className="text-5xl mb-3 mt-12 font-mono tracking-[-0.05em]">
           hello, I'm John Seungjin Oh
         </h1>
         <p className="text-xl text-customRed">
@@ -37,17 +37,18 @@ export default function Home() {
         make a favicon version of the logo.
         <br />
         <br />
-        Lastly, here is a picture of my cat:
+        Lastly, here is a picture of my cat, to make the minimalist design
+        slightly less obnoxious:
       </p>
       <Image
         className="mt-2"
-        src="/cat.jpg"
+        src="/cat2.jpg"
         alt="Cutest cat in the world"
-        width={400}
-        height={400 * (1897 / 1170)}
+        width={450}
+        height={450 * (986 / 628)}
       />
-      <p className="font-serif prose prose-neutral max-w-none mt-2 text-customBlue">
-        <i>what a distinguished gentleman</i>
+      <p className="font-serif prose prose-neutral max-w-none mt-2">
+        What a distinguished gentleman.
       </p>
     </Layout>
   );
