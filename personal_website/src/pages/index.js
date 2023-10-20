@@ -19,9 +19,9 @@ export default function Home() {
         <br />
         Go to the "blog" page to view my blog. I write regularly (hopefully
         around once a week) about philosophy, computer science, math, books,
-        literature, and sometimes even my own opinions. Although the blog is
-        pretty empty for now, I'm in the process of migrating some of my past
-        writing. It will also get new content with some time.
+        literature, education, and sometimes even my own opinions. Although the
+        blog is pretty empty for now, I'm in the process of migrating some of my
+        past writing. It will also get new content with some time.
         <br />
         <br />
         This website was more or less created from scratch while I was learning
