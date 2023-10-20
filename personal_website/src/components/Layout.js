@@ -18,7 +18,7 @@ const Layout = ({ children, title = "My Personal Website" }) => {
       <Head>
         <title>{title}</title>
       </Head>
-      <div className="antialiased max-w-3xl mx-4 mt-8 lg:mx-auto">
+      <div className="antialiased max-w-[45rem] mx-4 mt-8 mb-36 lg:mx-auto">
         <nav className="bg-white">
           <div className="flex justify-between items-center p-4">
             <div className="text-lg font-semibold text-gray-900">
@@ -63,7 +63,7 @@ const Layout = ({ children, title = "My Personal Website" }) => {
             </div>
           </div>
         </nav>
-        <main className="p-4">{children}</main>
+        <main className="p-3  mt-6">{children}</main>
       </div>
       <style jsx>{`
         .active-link {
