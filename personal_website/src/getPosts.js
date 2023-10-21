@@ -4,37 +4,57 @@ import matter from "gray-matter";
 import { serialize } from "next-mdx-remote/serialize";
 
 export async function getPosts() {
-  const postsDirectory = path.join(process.cwd(), "src/posts");
-  const fileNames = fs.readdirSync(postsDirectory);
-  const allPostsData = await Promise.all(
-    fileNames.map(async (fileName) => {
-      const slug = fileName.replace(/\.mdx$/, "");
+  try {
+    const postsDirectory = path.join(process.cwd(), "src/posts");
 
-      const fullPath = path.join(postsDirectory, fileName);
-      const fileContents = fs.readFileSync(fullPath, "utf8");
+    // Check if the directory exists
+    if (!fs.existsSync(postsDirectory)) {
+      throw new Error("Posts directory does not exist.");
+    }
 
-      const { data, content } = matter(fileContents);
-      const mdxSource = await serialize(content);
+    const fileNames = fs.readdirSync(postsDirectory);
 
-      // Explicitly parse the published date
-      const publishedDate = new Date(data.publishedDate);
+    // Check if there are any files in the directory
+    if (fileNames.length === 0) {
+      throw new Error("No posts found in the directory.");
+    }
 
-      console.log(`Published Date for ${slug}:`, publishedDate); // Debugging line
+    const allPostsData = await Promise.all(
+      fileNames.map(async (fileName) => {
+        const slug = fileName.replace(/\.mdx$/, "");
 
-      return {
-        slug,
-        mdxSource,
-        publishedDate,
-        ...data,
-      };
-    })
-  );
+        const fullPath = path.join(postsDirectory, fileName);
+        const fileContents = fs.readFileSync(fullPath, "utf8");
 
-  allPostsData.sort((a, b) => {
-    if (b.publishedDate > a.publishedDate) return 1;
-    if (b.publishedDate < a.publishedDate) return -1;
-    return 0;
-  });
+        const { data, content } = matter(fileContents);
+        const mdxSource = await serialize(content);
 
-  return allPostsData;
+        // Explicitly parse the published date
+        const publishedDate = new Date(data.publishedDate);
+
+        if (isNaN(publishedDate)) {
+          throw new Error(`Invalid published date in post: ${slug}`);
+        }
+
+        return {
+          slug,
+          mdxSource,
+          publishedDate,
+          ...data,
+        };
+      })
+    );
+
+    // Don't change sorting logic
+    allPostsData.sort((a, b) => {
+      if (b.publishedDate > a.publishedDate) return 1;
+      if (b.publishedDate < a.publishedDate) return -1;
+      return 0;
+    });
+
+    return allPostsData;
+  } catch (error) {
+    console.error("An error occurred while fetching posts:", error);
+    return [];
+  }
 }
