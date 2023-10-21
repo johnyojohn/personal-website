@@ -22,7 +22,7 @@ export default function Blog({ posts }) {
               >
                 {post.title}
               </Link>
-              <p className="prose prose-neutral text-sm mb-8 text-gray-500 mt-1">
+              <p className="prose prose-neutral text-sm mb-8 text-gray-500 max-w-none mt-1">
                 {post.summary}
               </p>
               <p className="text-sm text-customBlue">{post.publishedDate}</p>

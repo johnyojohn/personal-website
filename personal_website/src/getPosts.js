@@ -30,27 +30,11 @@ export async function getPosts() {
     })
   );
 
-  // Debugging: Explicitly return 1, 0, or -1
   allPostsData.sort((a, b) => {
     if (b.publishedDate > a.publishedDate) return 1;
     if (b.publishedDate < a.publishedDate) return -1;
     return 0;
   });
-
-  console.log(
-    "Titles after Sorting1:",
-    allPostsData.map((post) => post.title)
-  );
-
-  // Debugging: Try sorting a new array
-  const sortedPosts = [...allPostsData].sort(
-    (a, b) => b.publishedDate - a.publishedDate
-  );
-
-  console.log(
-    "Titles after Sorting2:",
-    sortedPosts.map((post) => post.title)
-  );
 
   return allPostsData;
 }

@@ -10,7 +10,7 @@ export default function BlogPost({ source, frontMatter }) {
         <h1 className="text-4xl font-mono mb-2  tracking-[-0.05em]">
           {frontMatter.title}
         </h1>
-        <h1 className="text-sm text-customBlue mb-8">
+        <h1 className="text-sm text-customBlue mb-12">
           Published on {frontMatter.publishedDate}
         </h1>
         <div className="prose prose-neutral max-w-none">
