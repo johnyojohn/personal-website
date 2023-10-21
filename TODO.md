@@ -5,7 +5,9 @@
 - [ ] SEO stuff like robots.txt and other
 - [ ] Optimization
 - [ ] Security stuff like security headers
+- [ ] Write better README
 - [ ] Brainstorm additional features and improvements
+      
 
 
 ### In Progress
