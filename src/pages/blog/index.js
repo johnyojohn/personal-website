@@ -18,7 +18,7 @@ export default function Blog({ posts }) {
             <li key={post.slug} className="border px-4 pt-3 pb-3 rounded-md">
               <Link
                 href={`/blog/${post.slug}`}
-                className="text-2xl font-semibold font-mono text-customRed"
+                className="text-2xl font-semibold font-mono tracking-[-0.025em] text-customRed"
               >
                 {post.title}
               </Link>
