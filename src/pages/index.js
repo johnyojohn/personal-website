@@ -25,7 +25,7 @@ export default function Home() {
         <br />
         <br />
         This website was more or less created from scratch while I was learning
-        Next.js and Tailwind CSS. Here is the{" "}
+        Next.js and Tailwind CSS; here is the{" "}
         <a
           href="https://github.com/johnyojohn/personal-website"
           className="text-blue-500"
@@ -33,7 +33,7 @@ export default function Home() {
           Github repo
         </a>
         . The website's main logo was produced by DALL-E 3 during an unsuccesful
-        attempt to emulate Rothko paintings. I then used Adobe Illustrator to
+        attempt to emulate Rothko paintings. Then, I used Adobe Illustrator to
         make a favicon version of the logo.
         <br />
         <br />

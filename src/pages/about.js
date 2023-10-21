@@ -20,10 +20,9 @@ export default function About() {
           Computer Science. In addition to a B.S. degree in computer science, I
           plan on pursuing an additional major in philosophy. Occasionally, I
           notice my heart whispering into my ear that I should also major in
-          math, tempting me with cool topological visualizations and intricate
-          connections to philosophy and mind-bending properties of ordinals.
-          Unforunately, I can only count to two, so a third degree would result
-          in a segfault error.
+          math, tempting me with ordinals and cool topological visualizations
+          and the intricate connections math has with philosophy. Unfortunately,
+          I can only count to two.
           <br />
           My biggest focuses within computer science right now are large
           language models (LLMs), algorithms, and web development. Within
