@@ -18,10 +18,11 @@ export default function Home() {
         <br />
         <br />
         Go to the "blog" page to view my blog. I write regularly (hopefully
-        around once a week) about philosophy, computer science, math, books,
-        literature, education, and sometimes even my own opinions. Although the
-        blog is pretty empty for now, I'm in the process of migrating some of my
-        past writing. It will also get new content with some time.
+        about once every two weeks or so) about philosophy, computer science,
+        math, books, literature, education, and sometimes even my own opinions.
+        Although the blog is pretty empty for now, I'm in the process of
+        migrating some of my past writing. It will also get new content with
+        some time.
         <br />
         <br />
         This website was more or less created from scratch while I was learning
@@ -33,8 +34,8 @@ export default function Home() {
           Github repo
         </a>
         . The website's main logo was produced by DALL-E 3 during an unsuccesful
-        attempt to emulate Rothko paintings. Then, I used Adobe Illustrator to
-        make a favicon version of the logo.
+        attempt to replicate the distinct feel of Rothko paintings. Then, I used
+        Adobe Illustrator to make a favicon version of the logo.
         <br />
         <br />
         Lastly, here is a picture of my cat, to make the minimalist design
