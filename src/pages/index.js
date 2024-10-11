@@ -17,12 +17,11 @@ export default function Home() {
         resume, and other relevant information about me.
         <br />
         <br />
-        Go to the "blog" page to view my blog. I write regularly (hopefully
-        about once every two weeks or so) about philosophy, computer science,
-        math, books, literature, education, and sometimes even my own opinions.
-        Although the blog is pretty empty for now, I'm in the process of
-        migrating some of my past writing. It will also get new content with
-        some time.
+        Go to the "blog" page to view my blog. I might write about philosophy,
+        computer science, math, books, literature, education, and sometimes even
+        my own opinions. Although the blog is pretty empty for now, I'm in the
+        process of migrating some of my past writing. It will also get new
+        content with some time.
         <br />
         <br />
         This website was more or less created from scratch while I was learning

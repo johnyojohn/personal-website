@@ -8,9 +8,8 @@ export default function Blog({ posts }) {
       <div className="">
         <h1 className="text-4xl font-mono mb-8">blog</h1>
         <p className="prose prose-neutral max-w-none mb-4">
-          Welcome to my blog. I try to upload new posts around once a week. Some
-          of my topics include philosophy, computer science, math, books,
-          literature, education, and even my own opinions.
+          Welcome to my blog. I try to upload new posts <s>once a week</s>{" "}
+          <s>once a month</s> when I can.
         </p>
 
         <ul className="space-y-4">

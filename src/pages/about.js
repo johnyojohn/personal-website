@@ -13,22 +13,22 @@ export default function About() {
       <div className="">
         <h1 className="text-4xl font-mono mb-8">about me</h1>
         <p className="prose prose-neutral max-w-none">
-          My friends call me John Oh, the government calls me Seungjin Oh, and
-          so this website calls me John Seungjin Oh.
+          My legal name is John Seungjin Oh. I also go by John Oh, Seungjin Oh,
+          Johnyojohn, and (with acute awareness that a public pseudoynm is
+          cringe) Anti-Dionysus.
           <br />
-          I am a first-year undergraduate student at Carnegie Mellon's School of
-          Computer Science. In addition to a B.S. degree in computer science, I
-          plan on pursuing an additional major in philosophy. Occasionally, I
-          notice my heart whispering into my ear that I should also major in
-          math, tempting me with ordinals and cool topological visualizations
-          and the intricate connections math has with philosophy. Unfortunately,
-          I can only count to two.
+          I am a second-year undergraduate student at Carnegie Mellon's School
+          of Computer Science hoping to graduate in 2026. I am also pursuing an
+          additional major in philosophy, with a particular interest in logic.
+          Occasionally, I notice my heart whispering into my ear that I should
+          take on a major in math as well, tempting me with nLab and cool
+          topological visualizations and the intricate connections math has with
+          philosophy. But I can only count to two.
           <br />
           My biggest focuses within computer science right now are large
           language models (LLMs), algorithms, and web development. Within
-          philosophy, my biggest interests are personal identity, the "later"
-          Nietzsche, philosophy of A.I., and social theory (Debord, Baudrillard,
-          Han).
+          philosophy, my biggest interests are causality, the "later" Nietzsche,
+          philosophy of A.I., and social theory (Debord, Baudrillard, Han).
         </p>
 
         {/* Socials/Contacts */}
@@ -88,17 +88,19 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="p-4 border rounded">
               <h3 className="text-xl mb-1 text-customBlue">
-                Internet Rabbithole App (in early development)
+                TextualLearner: Convert Educational Videos Into Articles (in
+                progress)
               </h3>
               <hr className="mb-3" width="100%" color="black" />
 
               <p>
-                Full-stack web app built primarily with Next.js and OpenAI API
-                which will allow users to store, visualize, explore, and get
-                recommendations regarding "internet rabbitholes."
+                Full-stack web app built with Next.js, Go, GCP, Vertex AI, and
+                GraphQL that does exactly what the above heading says. Still
+                working on performance issues and supporting more text formats
+                (especially LaTeX).
               </p>
               <a
-                href="https://github.com/johnyojohn/rabbithole"
+                href="https://github.com/johnyojohn/video-to-article"
                 className="text-blue-500"
               >
                 Github Repo
